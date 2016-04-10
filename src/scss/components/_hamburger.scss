@@ -1,0 +1,39 @@
+.hamburger {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgba($color-base, 0.95);
+    z-index: 98;
+    padding: 30px;
+    color: white;
+    display: none;
+}
+
+.hamburger-items {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.hamburger-items li {
+    font-size: 2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.hamburger-items li a {
+    color: white;
+}
+
+.hamburger-items li a:hover {
+    color: white;
+}
+
+// .hamburger-close {
+//     position: absolute;
+//     top: 15px;
+//     right: 30px;
+//     font-size: 1.5em;
+// }

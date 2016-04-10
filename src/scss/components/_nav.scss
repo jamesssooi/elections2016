@@ -1,0 +1,117 @@
+.navbar {
+    background-color: $color-base;
+    border: none;
+    border-radius: 0;
+    color: white;
+    width: 100%;
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(white, 0.2);
+}
+
+.navbar .container {
+    display: table;
+}
+
+.navbar h1 {
+    font-size: 1em;
+    margin: 0;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.navbar-item {
+    display: table-cell;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.navbar-item:last-of-type {
+    width: 99%;
+}
+
+.navbar-header {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.navbar-brand {
+    height: auto;
+    padding-left: 0;
+    margin-left: 0 !important;
+}
+
+.navbar-brand img {
+    display: block;
+    height: 40px;
+}
+
+.navbar-hamburger {
+    font-size: 1.5em;
+    text-align: right;
+    margin-right: -15px;
+    padding-right: 15px;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+    .navbar-hamburger {
+        display: none;
+    }
+}
+
+.navbar-fill {
+    width: 99%;
+}
+
+.navbar-links {
+    text-align: right;
+}
+
+.navbar-links ul {
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+.navbar-links li {
+    display: inline-block;
+}
+
+.navbar-links li + li {
+    margin-left: 20px;
+}
+
+.navbar-links li a {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.8em;
+}
+
+.navbar-links li a:hover {
+    color: white;
+}
+
+.navbar-links .link-highlighted {
+    padding: 7px 14px;
+    border-radius: 4px;
+    border: 1px solid white;
+}
+
+.navbar-links .link-highlighted:hover {
+    background-color: white;
+    color: $color-base;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 767px) {
+    .navbar .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .navbar-brand img {
+        height: 60px;
+    }
+}

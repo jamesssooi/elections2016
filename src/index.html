@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-	<title>Website Boilerplate</title>
+	<title>Student Elections 2016 | Sunway University Student Council</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="apple-mobile-web-app-capable" content="yes">
@@ -9,13 +9,228 @@
 	<!-- load bootstrap via CDN -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">	
 	
+	<!-- load js -->
+	<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script src='js/fastclick.js'></script>
+	<script src="js/scripts.js"></script>
+	
+	<!-- load font -->
+	<link href='https://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Nunito:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	
 	<!-- load css -->
 	<link rel="stylesheet" href="css/main.css">
 	
 </head>	
 <body>
 	
-	<h1>Hello World!</h1>
+<!-- Hamburger -->
+<nav id="hamburger" class="hamburger">
+	<ul class="list-unstyled hamburger-items">
+		<li><a href="index.html">Home</a></li>
+		<li><a href="positions.html">Positions</a></li>
+		<li><a href="register.html">Register</a></li>
+	</ul>
+</nav>
+
+<!-- Navigation -->
+<nav id="navigation" class="navbar navbar-default">
+	<div class="container">
+		<div class="navbar-header navbar-item">
+			<a href="#" class="navbar-brand">
+				<img src="assets/logo_susc_outline.svg" alt="Sunway University Student Council">
+			</a>
+		</div>
+		<div class="navbar-item">
+			<h1>Elections 16’</h1>
+		</div>
+		<div id="hamburger_button" class="navbar-item navbar-hamburger navbar-fill">
+			<i class="fa fa-bars"></i>
+		</div>
+		<div class="navbar-item navbar-links hidden-xs">
+			<ul class="list-unstyled">
+				<li><a href="positions.html">Positions</a></li>
+				<li><a href="register.html" class="link-highlighted">Register</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+<!-- Landing -->
+<section id="landing" class="header">
+	<div class="container hero">
+		<div class="row">
+			<div class="hero-text col-xs-12 col-sm-6 col-md-6 col-lg-5">
+				<h1>Join the Student Council Elections</h1>
+				<p>Lorem ipsum dolor sit amet conseqtur dilis adispicing elit</p>
+				<a href="#" class="hero-link hero-link-primary">Register <i class="fa fa-arrow-circle-right"></i></a>
+				<a href="positions.html" class="hero-link">View positions <i class="fa fa-arrow-circle-right"></i></a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Why -->
+<section id="why">
+	<div class="container">
+		<h2>Be part of something great.</h2>
 	
+		<div class="row">
+			<div class="desc-item col-xs-12 col-sm-4">
+				<div class="row">
+					<div class="col-xs-12 col-md-2">
+						<img src="assets/icons/fire.svg" alt="" class="desc-item-icon" width="50">
+					</div>
+					<div class="col-xs-12 col-md-10">
+						<h4>Make a lasting impact.</h4>
+						<p>Lorem ipsum dolor sit amet conseqtur dilis adispicing elit</p>
+					</div>
+				</div>
+			</div>
+			<div class="desc-item col-xs-12 col-sm-4">
+				<div class="row">
+					<div class="col-xs-12 col-md-2">
+						<img src="assets/icons/loudspeaker.svg" alt="" class="desc-item-icon" width="50">
+					</div>
+					<div class="col-xs-12 col-md-10">
+						<h4>Be the voice of students.</h4>
+						<p>Lorem ipsum dolor sit amet conseqtur dilis adispicing elit</p>
+					</div>
+				</div>
+			</div>
+			<div class="desc-item col-xs-12 col-sm-4">
+				<div class="row">
+					<div class="col-xs-12 col-md-2">
+						<img src="assets/icons/idea.svg" alt="" class="desc-item-icon" width="50">
+					</div>
+					<div class="col-xs-12 col-md-10">
+						<h4>Gain meaningful experience.</h4>
+						<p>Lorem ipsum dolor sit amet conseqtur dilis adispicing elit</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- How -->
+<section id="how" class="color-section-alternate">
+	<div class="container">
+		<h2>How to join?</h2>
+		
+		<div class="row">
+			<div class="desc-item desc-item-center col-xs-12 col-sm-3">
+				<img src="assets/icons_howto/register.svg" alt="" class="desc-item-icon" width="100">
+				<h4>Register as a candidate</h4>
+				<p>Lorem ipsum dolor sit amet conseqtur dilis adispicing elit</p>
+			</div>
+			<div class="desc-item desc-item-center col-xs-12 col-sm-3">
+				<img src="assets/icons_howto/briefing.svg" alt="" class="desc-item-icon" width="100">
+				<h4>Attend mandatory briefing.</h4>
+				<p>Lorem ipsum dolor sit amet conseqtur dilis adispicing elit</p>
+			</div>
+			<div class="desc-item desc-item-center col-xs-12 col-sm-3">
+				<img src="assets/icons_howto/campaign.svg" alt="" class="desc-item-icon" width="100">
+				<h4>Campaign your candidacy.</h4>
+				<p>Lorem ipsum dolor sit amet conseqtur dilis adispicing elit</p>
+			</div>
+			<div class="desc-item desc-item-center col-xs-12 col-sm-3">
+				<img src="assets/icons_howto/vote.svg" alt="" class="desc-item-icon" width="100">
+				<h4>Vote!</h4>
+				<p>Lorem ipsum dolor sit amet conseqtur dilis adispicing elit</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Positions -->
+<section id="home_positions">
+	<div class="container">
+		<h2>10 Positions Available</h2>
+		<div class="row">
+			<div class="col-xs-12 col-sm-6 col-md-4">
+				<a href="#" class="card-item">
+					President
+				</a>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-4">
+				<a href="#" class="card-item">
+					Vice-president
+				</a>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-4">
+				<a href="#" class="card-item">
+					Advertising & Promotions Director
+				</a>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-4">
+				<a href="#" class="card-item">
+					Academic Affairs Director
+				</a>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-4">
+				<a href="#" class="card-item">
+					Director of Academic Affairs
+				</a>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-4">
+				<a href="#" class="card-item">
+					Director of Academic Affairs
+				</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- CTA -->
+<section id="cta" class="color-section-base section-bg-checkmark">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-4 col-sm-offset-4">
+				<h2>Register your candidacy</h2>
+				<a href="#" class="btn btn-primary btn-block">Register</a>
+				<span class="help-block small">Don't worry, we'll guide you through the entire process!</span>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Footer -->
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="footer-header col-xs-12 col-md-4">
+				<img class="footer-logo" src="assets/logo_susc.svg" alt="">
+				<span class="footer-title">Elections 16'</span>
+			</div>
+			
+			<div class="col-xs-6 col-md-4">
+				<ul class="list-unstyled list-item">
+					<li class="list-item-title">Elections</li>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Positions</a></li>
+					<li class=""><a href="#">Register</a></li>
+				</ul>
+			</div>
+			
+			<div class="col-xs-6 col-md-4">
+				<ul class="list-unstyled list-item">
+					<li class="list-item-title">Contact</li>
+					<li><a href="#">Facebook</a></li>
+					<li><a href="#">Twitter</a></li>
+					<li><a href="#">Email</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	<div class="container-fluid">
+		<div class="footer-footer">
+			<span class="small">&copy; 2016 Sunway University Student Council. All Rights Reserved.</span>
+		</div>
+	</div>
+</footer>
+
 </body>
 </html>

@@ -1,0 +1,48 @@
+.hero {
+    //min-height: 80vh;
+}
+
+.hero-text {
+    background-color: rgba($color-base, 0.8);
+    box-shadow: 0 0 10px 20px rgba($color-base, 0.8);
+}
+
+.hero-link {
+    color: white;
+}
+
+.hero-link:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.hero-link + .hero-link {
+    margin-left: 15px;
+    color: rgba($color-lightgrey, 0.8);
+}
+
+.hero-link-primary {
+    color: $color-accent;
+}
+
+.hero-link-primary:hover {
+    color: $color-accent;
+}
+
+.hero .btn-primary {
+    background-color: $color-accent;
+    color: white;
+    border: 0;
+    padding: 10px;
+    margin: 20px 0;
+    box-shadow: 0 3px 0 0 rgba(black, 0.2);
+    letter-spacing: 1px;
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+    .hero-text {
+        font-size: 1.25em;
+    }
+}

@@ -1,0 +1,24 @@
+.positions-md-item {
+    margin-bottom: 15px;
+    color: $color-darkgrey;
+}
+
+hr + .positions-md-item {
+    padding-top: 15px;
+}
+
+.positions-md-item-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    display: block;
+}
+
+.positions-md-item-interests {
+    font-size: 0.8em;
+    color: lighten($color-darkgrey, 20%);
+    font-style: italic;
+}
+
+hr {
+    border-top: 1px solid darken($color-lightgrey, 10%);
+}

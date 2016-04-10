@@ -1,0 +1,61 @@
+section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid darken($color-lightgrey, 20%);
+}
+
+.container {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+@media screen and (min-width: 768px) {
+    section {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+.color-section-base {
+    background-color: $color-base;
+    color: white;
+}
+
+.color-section-accent {
+    background-color: $color-accent;
+    color: white;
+}
+
+.color-section-alternate {
+    background-color: white;
+}
+
+.section-bg-checkmark {
+    background-image: url('../assets/bg_checkmark.svg');
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-bottom: 0;
+}
+
+h2 + .section-desc {
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+.fixed-to-top {
+    position: relative;
+    top: 0;
+    z-index: 99;
+}
+
+.noscroll {
+    overflow: hidden;
+    position: fixed;
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 1024px;
+    }
+}

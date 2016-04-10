@@ -1,0 +1,29 @@
+.accordion-item + .accordion-item {
+    margin-top: 15px;
+}
+
+.accordion-toggle {
+    display: block;
+    padding: 10px 15px 10px 0;
+    position: relative;
+    border-bottom: 1px solid rgba($color-darkgrey, 0.5);
+    cursor: pointer;
+}
+
+.accordion-toggle-icon {
+    @include vertical-align();
+    right: 0;
+    color: rgba($color-darkgrey, 0.8);
+}
+
+.accordion-toggle-icon-left {
+    @include vertical-align();
+    left: 0;
+    color: rgba($color-darkgrey, 0.8);
+}
+
+.accordion-content {
+    display: none;
+    padding: 15px 0 0;
+    color: rgba($color-darkgrey, 0.8);
+}

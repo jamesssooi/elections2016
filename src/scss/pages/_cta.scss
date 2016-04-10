@@ -1,0 +1,29 @@
+#cta {
+    padding-bottom: 40px;
+}
+
+#cta h2 {
+    //color: white;
+}
+
+#cta p {
+    //color: white;
+    text-align: center;
+}
+
+#cta .btn-primary {
+    background-color: $color-accent;
+    color: white;
+    border: 0;
+    padding: 10px;
+    margin: 10px 0;
+    box-shadow: 0 3px 0 0 rgba(black, 0.2);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+#cta .help-block {
+    color: rgba($color-lightgrey, 0.5);
+    text-align: center;
+}
+

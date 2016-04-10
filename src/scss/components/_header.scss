@@ -1,0 +1,28 @@
+.header {
+    background-color: $color-base;
+    color: white;
+}
+
+.header p {
+    font-size: 1em;
+    color: rgba($color-lightgrey, 0.8);
+}
+
+// @media screen and (max-width: 767px) {
+//     .header {
+//         background-size: 175%;
+//         //background-position: left;
+//     }
+// }
+
+// @media screen and (max-width: 991px) {
+//     .header {
+//         background-size: 150%;
+//     }
+// }
+
+// @media screen and (min-width: 992px) {
+//     .header {
+//         background-size: 100%;
+//     }
+// }

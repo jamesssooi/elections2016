@@ -1,0 +1,24 @@
+.desc-item {
+    margin-top: 30px;
+}
+
+.desc-item-center {
+    text-align: center;
+}
+
+.desc-item h4 {
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 15px;
+    color: $color-darkgrey;
+}
+
+.desc-item p {
+    color: rgba($color-darkgrey, 0.8);
+}
+
+@media screen and (min-width: 992px) {
+    .desc-item h4 {
+        margin-top: 15px;
+    }
+}

@@ -1,0 +1,53 @@
+#landing {
+    padding: 0;
+    background-color: $color-base;
+}
+
+#landing .hero {
+    color: white;
+    //min-height: 80vh;
+    position: relative;
+    //text-align: center;
+    padding: 100px 30px;
+    background-image: url('../assets/bg_pattern.svg');
+    background-size: 200%;
+    //background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 768px) {
+    #landing .hero {
+        background-size: 100%;
+        min-height: 80vh;
+    }
+}
+
+#landing .hero p {
+    font-size: 1em;
+    color: rgba($color-lightgrey, 0.8);
+}
+
+#landing .hero h1 {
+    font-size: 2em;
+    margin-top: 0;
+    text-transform: uppercase;
+    color: $color-accent;
+    font-weight: bold;
+}
+
+#landing .hero .hero-link i.fa {
+    transition: transform 0.2s ease-in-out;
+    -moz-transition: transform 0.2s ease-in-out;
+    -webkit-transition: transform 0.2s ease-in-out;
+}
+
+#landing .hero .hero-link:hover i.fa {
+    transform: translateX(2px);
+}
+
+@media screen and (min-width: 768px) {
+    #landing .hero-text {
+        background-color: $color-base;
+        box-shadow: 0 0 30px 30px rgba($color-base, 1);
+        @include vertical-align;
+    }
+}
