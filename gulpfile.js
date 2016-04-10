@@ -42,7 +42,7 @@ gulp.task('sass-build', function() {
 
 // Transfer html files
 gulp.task('html-transfer', function() {
-	return gulp.src('src/**/*.+(html|htm|php)')
+	return gulp.src('src/**/*.+(html|htm|php|js)')
 		.pipe(gulp.dest('dist'))
 });
 

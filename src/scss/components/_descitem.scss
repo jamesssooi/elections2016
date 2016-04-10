@@ -13,12 +13,20 @@
     color: $color-darkgrey;
 }
 
+.desc-item-center h4 {
+    margin-top: 15px;
+}
+
 .desc-item p {
     color: rgba($color-darkgrey, 0.8);
 }
 
 @media screen and (min-width: 992px) {
     .desc-item h4 {
+        margin-top: 0;
+    }
+    
+    .desc-item-center h4 {
         margin-top: 15px;
     }
 }

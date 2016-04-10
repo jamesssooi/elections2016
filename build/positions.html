@@ -1,0 +1,54 @@
+---
+layout: page
+title: Positions
+description: Lorem ipsum dolor sit amet conseqtur dilis adispicing elit.
+---
+
+<!-- Positions (Mobile) -->
+<section id="positions_xs" class="container visible-xs visible-sm">
+    {% for position in site.data.positions %}
+	<div class="accordion-item" id="{{ position.id }}-xs">
+		<div class="accordion-toggle">
+			{{ position.position }}
+			<i class="accordion-toggle-icon fa fa-chevron-down"></i>
+		</div>
+		<div class="accordion-content">
+			{{ position.description | markdownify }}
+		</div>
+	</div>
+    {% endfor %}
+</section>
+
+<!-- Positions (Desktop) -->
+<section id="positions-md" class="hidden-xs hidden-sm">
+	<div class="container">
+        
+        {% for position in site.data.positions %}
+		<div class="row positions-md-item" id="{{ position.id }}-sm">
+			<div class="col-md-3 positions-md-item-info">
+				<span class="positions-md-item-title">{{ position.position }}</span>
+				<span class="positions-md-item-interests">Perfect for people who like: {{ position.forpeople | markdownify }}</span>
+			</div>
+			<div class="col-md-9">
+				{{ position.description | markdownify }}
+			</div>
+		</div>
+		
+		<hr />
+        {% endfor %}
+        
+	</div>
+</section>
+
+<!-- CTA -->
+<section id="cta" class="color-section-base section-bg-checkmark">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-4 col-sm-offset-4">
+				<h2>Register your candidacy</h2>
+				<a href="#" class="btn btn-primary btn-block">Register</a>
+				<span class="help-block small">Don't worry, we'll guide you through the entire process!</span>
+			</div>
+		</div>
+	</div>
+</section>

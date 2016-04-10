@@ -2,22 +2,118 @@
 layout: default
 ---
 
-<div class="home">
+<!-- Landing -->
+<section id="landing" class="header">
+	<div class="container hero">
+		<div class="row">
+			<div class="hero-text col-xs-12 col-sm-6 col-md-6 col-lg-5">
+				<h1>Join the Student Council Elections</h1>
+				<p>Lorem ipsum dolor sit amet conseqtur dilis adispicing elit</p>
+				<a href="#" class="hero-link hero-link-primary">Register <i class="fa fa-arrow-circle-right"></i></a>
+				<a href="positions.html" class="hero-link">View positions <i class="fa fa-arrow-circle-right"></i></a>
+			</div>
+		</div>
+	</div>
+</section>
 
-  <h1 class="page-heading">Posts</h1>
+<!-- Why -->
+<section id="why">
+	<div class="container">
+		<h2>Be part of something great.</h2>
+	
+		<div class="row">
+			<div class="desc-item col-xs-12 col-sm-4">
+				<div class="row">
+					<div class="col-xs-12 col-md-2">
+						<img src="assets/icons/fire.svg" alt="" class="desc-item-icon" width="45">
+					</div>
+					<div class="col-xs-12 col-md-10">
+						<h4>Make a lasting impact.</h4>
+						<p>Lorem ipsum dolor sit amet conseqtur dilis adispicing elit</p>
+					</div>
+				</div>
+			</div>
+			<div class="desc-item col-xs-12 col-sm-4">
+				<div class="row">
+					<div class="col-xs-12 col-md-2">
+						<img src="assets/icons/loudspeaker.svg" alt="" class="desc-item-icon" width="45">
+					</div>
+					<div class="col-xs-12 col-md-10">
+						<h4>Be the voice of students.</h4>
+						<p>Lorem ipsum dolor sit amet conseqtur dilis adispicing elit</p>
+					</div>
+				</div>
+			</div>
+			<div class="desc-item col-xs-12 col-sm-4">
+				<div class="row">
+					<div class="col-xs-12 col-md-2">
+						<img src="assets/icons/idea.svg" alt="" class="desc-item-icon" width="45">
+					</div>
+					<div class="col-xs-12 col-md-10">
+						<h4>Gain meaningful experience.</h4>
+						<p>Lorem ipsum dolor sit amet conseqtur dilis adispicing elit</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+<!-- How -->
+<section id="how" class="color-section-alternate">
+	<div class="container">
+		<h2>How to join?</h2>
+		
+		<div class="row">
+			<div class="desc-item desc-item-center col-xs-12 col-sm-3">
+				<img src="assets/icons_howto/register.svg" alt="" class="desc-item-icon" width="100">
+				<h4>Register as a candidate</h4>
+				<p>Lorem ipsum dolor sit amet conseqtur dilis adispicing elit</p>
+			</div>
+			<div class="desc-item desc-item-center col-xs-12 col-sm-3">
+				<img src="assets/icons_howto/briefing.svg" alt="" class="desc-item-icon" width="100">
+				<h4>Attend mandatory briefing.</h4>
+				<p>Lorem ipsum dolor sit amet conseqtur dilis adispicing elit</p>
+			</div>
+			<div class="desc-item desc-item-center col-xs-12 col-sm-3">
+				<img src="assets/icons_howto/campaign.svg" alt="" class="desc-item-icon" width="100">
+				<h4>Campaign your candidacy.</h4>
+				<p>Lorem ipsum dolor sit amet conseqtur dilis adispicing elit</p>
+			</div>
+			<div class="desc-item desc-item-center col-xs-12 col-sm-3">
+				<img src="assets/icons_howto/vote.svg" alt="" class="desc-item-icon" width="100">
+				<h4>Vote!</h4>
+				<p>Lorem ipsum dolor sit amet conseqtur dilis adispicing elit</p>
+			</div>
+		</div>
+	</div>
+</section>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+<!-- Positions -->
+<section id="home_positions">
+	<div class="container">
+		<h2>10 Positions Available</h2>
+		<div class="row">
+			{% for position in site.data.positions %}
+			<div class="col-xs-12 col-sm-6 col-md-4">
+				<a href="positions.html#{{ position.id }}" class="card-item">
+					{{ position.position }}
+				</a>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</section>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+<!-- CTA -->
+<section id="cta" class="color-section-base section-bg-checkmark">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-4 col-sm-offset-4">
+				<h2>Register your candidacy</h2>
+				<a href="#" class="btn btn-primary btn-block">Register</a>
+				<span class="help-block small">Don't worry, we'll guide you through the entire process!</span>
+			</div>
+		</div>
+	</div>
+</section>

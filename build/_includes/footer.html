@@ -1,38 +1,36 @@
-<footer class="site-footer">
-
-  <div class="wrapper">
-
-    <h2 class="footer-heading">{{ site.title }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>{{ site.title }}</li>
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-          {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
-          {% endif %}
-
-          {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
-          </li>
-          {% endif %}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description }}</p>
-      </div>
-    </div>
-
-  </div>
-
+<!-- Footer -->
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="footer-header col-xs-12 col-md-4">
+				<img class="footer-logo" src="assets/logo_susc.svg" alt="">
+				<span class="footer-title">Elections 16'</span>
+			</div>
+			
+			<div class="col-xs-6 col-md-4">
+				<ul class="list-unstyled list-item">
+					<li class="list-item-title">Elections</li>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Positions</a></li>
+					<li class=""><a href="#">Register</a></li>
+				</ul>
+			</div>
+			
+			<div class="col-xs-6 col-md-4">
+				<ul class="list-unstyled list-item">
+					<li class="list-item-title">Contact</li>
+					<li><a href="#">Facebook</a></li>
+					<li><a href="#">Twitter</a></li>
+					<li><a href="#">Email</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	<div class="container-fluid">
+		<div class="footer-footer">
+			<span class="small">&copy; 2016 Sunway University Student Council. All Rights Reserved.</span>
+		</div>
+	</div>
 </footer>
+

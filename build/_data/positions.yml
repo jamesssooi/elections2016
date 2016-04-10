@@ -1,0 +1,61 @@
+- position: President
+  id: "president"
+  description: >
+                Lorem ipsum dolor sit amet conseqtur dilis adispic
+                elit. __This is bold__ and _this is italics_.
+  forpeople: >
+              
+  
+- position: "Vice-president"
+  id: "vicepresident"
+  description: ""
+  forpeople: >
+              
+  
+- position: "General Secretary"
+  id: "generalsecretary"
+  description: ""
+  forpeople: >
+              
+  
+- position: "Treasurer"
+  id: "treasurer"
+  description: ""
+  forpeople: >
+              
+  
+- position: "Academic Affairs Director"
+  id: "academicaffairs"
+  description: ""
+  forpeople: >
+              
+  
+- position: "Advertising & Promotions Director"
+  id: "advertisingpromotions"
+  description: ""
+  forpeople: >
+              
+  
+- position: "Community Service Director"
+  id: "communityservice"
+  description: ""
+  forpeople: >
+              
+  
+- position: "Extra-curricular Director"
+  id: "extracurricular"
+  description: ""
+  forpeople: >
+              
+  
+- position: "International Students Director"
+  id: "intlstudents"
+  description: ""
+  forpeople: >
+              
+  
+- position: "Students Welfare Director"
+  id: "studentswelfare"
+  description: ""
+  forpeople: >
+              
