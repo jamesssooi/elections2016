@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+{% include head.html %}
+</head>
+
+<body>
+
+{% include header.html %}
+
+<section class="header hero">
+	<div class="container">
+		<div class="row">
+			<div class="hero-text col-xs-12 col-sm-6 col-md-6 col-lg-5">
+				<h1>{{ page.title }}</h1>
+				<p>{{ page.description }}</p>
+                {% if page.cta %}
+				    <a href="{{ page.cta_link }}" class="btn btn-primary btn-block" onclick="ga('send', 'event', '{{ page.cta_event }}', 'click', '{{ page.cta_event_label }}')">{{ page.cta }}</a>
+                {% endif %}
+			</div>
+		</div>
+	</div>
+</section>
+
+<section>
+	<div class="container content">
+		<div class="row">
+			<div class="col-xs-12 col-md-9">
+				{{ content }}
+			</div>
+			<div class="col-xs-12 col-md-3">
+				{{ page.sidebar | markdownify }}
+			</div>
+		</div>
+	</div>
+</section>
+
+{% include footer.html %}
+
+</body>
+
+</html>

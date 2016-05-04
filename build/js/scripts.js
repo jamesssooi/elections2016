@@ -8,6 +8,10 @@ $(document).ready(function() {
     var isShowHamburger = false;
     var hamburgerIsWorking = false;
     
+    // Hello you
+    console.log('Hello! The Sunway University Student Council is always looking for enthusiastic developers to work on interesting projects for the betterment of the campus.');
+    console.log("The fact that you're reading this makes us think you'll be a perfect candidate for that. Apply via email at sa.info@imail.sunway.edu.my!");
+    
     // Hamburger menu
     $('#hamburger_button').click(function() {
         
@@ -63,18 +67,43 @@ $(document).ready(function() {
         }
     });
     
-    // toggle accordion from url
+    // Toggle accordion from url
     var hash = window.location.hash;
 	var vwidth = window.innerWidth;
 	if (hash) {
 		$(hash + '-xs').children('.accordion-toggle').trigger('click');
 		
 		// scroll to position
-		if (vwidth < 768) {
-			smoothScroll.animateScroll(hash + '-xs');
+		if (vwidth < 992) {
+			smoothScroll.animateScroll(hash + '-xs', null, {'updateURL': false});
 		} else {
-			smoothScroll.animateScroll(hash + '-sm');
+			smoothScroll.animateScroll(hash + '-sm', null, {'updateURL': false});
 		}
-	}	
-	
+	}
+
+    // Toggle show more
+    $('.show-more').click(function() {
+        
+        // toggle content
+        $(this).next('.show-more-content').slideToggle(100);
+        
+        // remove class
+        $(this).removeClass('show-more');
+                
+    });
+
+    // Toggle video
+    $('.candidate-video-button').click(function() {
+        
+        // if close, pause video; else send ga tracker event
+        if ($('#candidate-video').is(':visible')) {
+            $('iframe')[0].contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
+        } else {
+            
+        }
+        
+        $('#candidate-video').toggle();
+    });
+    
+    
 });

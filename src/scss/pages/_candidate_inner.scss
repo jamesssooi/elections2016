@@ -1,0 +1,279 @@
+#candidate {
+    padding: 0;
+    background-color: white;
+}
+
+#candidate .hero {
+    color: white;
+    position: relative;
+    padding: 100px 30px;
+    background-position: right;
+    background-size: auto 100%;
+    min-height: 80vh;
+    background-repeat: no-repeat;
+}
+
+#candidate .hero h1 {
+    font-size: 2.5em;
+    margin-top: 0;
+    text-transform: uppercase;
+    color: $color-base;
+    font-weight: bold;
+    display: inline-block;
+    pointer-events: auto;
+}
+
+#candidate .hero p {
+    font-size: 1em;
+    color: $color-darkgrey;
+    pointer-events: auto;
+    display: inline-block;
+}
+
+#candidate .hero-text {
+    @include vertical-align;
+    box-shadow: none;
+    background-color: transparent;
+    z-index: 98;
+    pointer-events: none;
+}
+
+#candidate .hero-link {
+    pointer-events: auto;
+    font-size: 0.8em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: rgba($color-darkgrey, 0.7);
+}
+
+.candidate-hero-overlay {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    
+    background-image: url('../assets/bg_candidate_checkmark.svg');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: auto 100%;
+}
+
+.play-button-outer {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: block;
+    cursor: pointer;
+    z-index: 97;
+}
+
+.play-button-outer .fa-play-circle {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    font-size: 96px;
+    color: $color-darkgrey;
+    display: block;
+    transition: all ease-in-out 0.3s;
+    transform-origin: center;
+}
+
+.play-button-outer:hover .fa-play-circle {
+    color: $color-accent;
+    font-size: 108px;
+}
+
+
+.candidate-video-outer {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    
+    background-color: white;
+    z-index: 99;
+    display: none;
+}
+
+.candidate-video {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 767px) {
+    #candidate .hero {
+        min-height: 60vh;
+    }
+    
+    #candidate .hero {
+        background-position: center;
+    }
+    
+    .play-button-outer .fa-play-circle {
+        font-size: 72px;
+    }
+    
+    .candidate-video iframe {
+        width: 320px;
+        height: 180px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    #candidate .hero {
+        min-height: 60vh;
+        background-position: center;
+    }
+}
+
+.candidate-video-close {
+    position: absolute;
+    right: 0;
+    top: -2.5em;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.8em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.candidate-video-close:hover {
+    color: $color-base;
+}
+
+#candidate-profile {
+    font-size: 1.2em;
+}
+
+.candidate-profile-biography p {
+    line-height: 1.5;
+    margin: 0 0 1em;
+    color: lighten($color-darkgrey, 15%);
+}
+
+.candidate-profile-sidebar {
+    background-color: darken($color-lightgrey, 5%);
+    border-radius: 5px;
+    border: 1px solid darken($color-lightgrey, 20%);
+    box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.1);
+    font-size: 1.2em;
+    padding: 30px;
+}
+
+.candidate-profile-sidebar h3 {
+    margin-top: 0;
+    font-weight: bold;
+}
+
+.candidate-profile-sidebar p {
+    color: lighten($color-darkgrey, 30%);
+}
+
+.candidate-profile-links li + li {
+    margin-top: 10px;
+}
+
+.candidate-profile-info {
+    margin-bottom: 40px;
+}
+
+.candidate-profile-info-inner {
+    padding-bottom: 20px;
+    border-bottom: 1px solid darken($color-lightgrey, 20%);
+
+}
+
+.candidate-profile-info h1 {
+    font-size: 2.5em;
+    margin-top: 0;
+    text-transform: uppercase;
+    color: $color-base;
+    font-weight: bold;
+}
+
+.candidate-profile-info a {
+    font-size: 0.8em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: rgba($color-darkgrey, 0.7);
+}
+
+#candidate-details {
+    font-size: 1.2em;
+}
+
+#candidate-details .section-title {
+   margin-bottom: 1.5em;
+}
+
+#candidate-details .section-title h2 {
+   color: $color-base;
+}
+
+#candidate-details .section-title p {
+    text-align: center;
+    color: lighten($color-darkgrey, 10%);
+}
+
+#candidate-details .section-title-image {
+    max-height: 200px;
+}
+
+.experiences-item + .experiences-item {
+    border-top: 1px solid darken($color-lightgrey, 20%);
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+.experiences-item-title {
+    font-weight: bold;
+}
+
+.experiences-item-year {
+    color: lighten($color-darkgrey, 10%);
+    letter-spacing: 1px;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    display: block;
+}
+
+.manifesto-item {
+    padding: 15px;
+    background-color: darken($color-lightgrey, 7%);
+    border: 1px solid darken($color-lightgrey, 13%);
+    border-radius: 4px;
+    box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.1);
+    //display: inline-block;
+    // background-image: url('../assets/bg_checkmark.svg');
+    // background-size: auto 100%;
+    // background-position: right;
+    // background-repeat: no-repeat;
+}
+
+.manifesto-item + .manifesto-item {
+    margin-top: 20px;
+}
+
+.manifesto-item-title {
+    font-weight: bold;
+    display: block;
+}
+
+.manifesto-item-content {
+    font-size: 0.8em;
+    color: lighten($color-darkgrey, 20%);
+}

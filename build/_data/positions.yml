@@ -1,61 +1,215 @@
 - position: President
-  id: "president"
+  id: "presidency"
+  description_title: President and Vice-president
   description: >
-                Lorem ipsum dolor sit amet conseqtur dilis adispic
-                elit. __This is bold__ and _this is italics_.
+                The __President__ and __Vice-president__ is ultimately responsible for the leadership and direction of 
+                the Student Council, and by extension — all students. He or she will act as the figure head of 
+                the student body, and also help to be a part of management decisions on behalf of all 
+                University students.
+                
+                
+                __Their key responsibilities include:__
+                
+                
+                * Providing strategic vision and direction
+                
+                * Managing overall operations of the Student Council
+                
+                * Making key decisions
+                
+                * Participating in management meetings and formal functions
+                
+                * Chairing committee meetings
   forpeople: >
-              
+              to be visionary, to facilitate, to make decisions, to provide guidance, and to use their 
+              leadership to steer the strategic direction of the organization
   
 - position: "Vice-president"
-  id: "vicepresident"
+  id: "presidency"
   description: ""
   forpeople: >
               
   
 - position: "General Secretary"
   id: "generalsecretary"
-  description: ""
+  description: >
+                The __General Secretary__ holds the responsibility of being the official correspondence of 
+                the Student Council. He or she ensures that all internal communications and projects 
+                are at its best efficiency, and that proper records of the Student Council's operations 
+                are recorded and maintained.
+                
+                
+                __Their key responsibilities include:__
+                
+                
+                - Being the official correspondence of the Student Council
+                
+                - Writing meeting reports, formal letters, event reports and etc.
+                
+                - Employing and enforcing a variety of project management tools and standards
+                
+                - Ensuring proper records of the Student Council's operations
   forpeople: >
-              
+              to be organized, paperwork, writing, internal communications & operations, project management
   
 - position: "Treasurer"
   id: "treasurer"
-  description: ""
-  forpeople: >
+  description: >
+                The __Treasurer__ manages all financial and monetary matters of the Student Council. He or she 
+                ensures that all accounts are up-to-date, true and fair; while also being responsibile in 
+                budgeting for the Student Council's activities.
+                
+                
+                __Their key responsibilties include:__
+                
+                
+                - Management of the Student Council's day-to-day finances
+                
+                - Ensuring proper, up-to-date, and true reflection of the accounts
+                
+                - Creating budgets for the Student Council's activities
+                
+                - Processing claims
+  forpeople: "to deal with finances, have an orderly mind and methodical way of thinking and have a good eye for detail"
               
   
 - position: "Academic Affairs Director"
   id: "academicaffairs"
-  description: ""
+  description: >
+                The __Academic Affairs Director__ leads the Academic Affairs department, which is responsible 
+                for attending academic-related management committee meetings, being attentive and proactive 
+                to resolve students' academic-related problems, to be the liaison between students, 
+                lecturers and staff for any academic-relater matters, and to ensure well communications 
+                among faculty and faculty representatives.
+                
+                
+                __Their key responsibilites include:__
+                
+                
+                - Resolving academic-related matters
+                
+                
+                - Attending academic-related management committee meetings
+                
+                
+                - Providing feedback to enhance the quality of education
+                
+                
+                - Provide a forum for the discussion of issues related to education
+                
+                
   forpeople: >
-              
+              to work and liaise with different groups of people, to solve problems, and is concerned with 
+              the quality of education in Sunway University
   
 - position: "Advertising & Promotions Director"
   id: "advertisingpromotions"
-  description: ""
+  description: >
+                The __Advertising & Promotions Director__ leads the Advertising & Promotions department, which 
+                is responsible for managing the Student Council's publicity communication channels, provide 
+                graphic designing skills and resources, promoting the Student Council's activities, and 
+                announcing relevant updates to the student body.
+                
+                
+                __Their key responsibilities include:__
+                
+                
+                - Managing the Student Council's publicity communication channels
+                
+                - Building and maintaining the public image and reputation
+                
+                - Provide graphic designing skills and resources
+                
+                - Promoting the Student Council's activities
+                
+                - Announcing important updates relevant to all students
   forpeople: >
-              
+              social media, public relations, graphic designing, and is highly aware of public image
   
 - position: "Community Service Director"
   id: "communityservice"
-  description: ""
+  description: >
+                The __Community Service Director__ leads the Community Service Department, which responsibility 
+                includes creating events that allows students to reach out to the community, developing 
+                social campaigns and organizing fundraisers for a cause.
+                
+                
+                __Their key responsibilities include:__
+                
+                
+                - Organizing and planning community-service related events, campaigns and fundraisers
+                
+                - Raising awareness for a greater cause
+                
+                - Getting in contact and collaborate with NGOs and social enterprises
+
   forpeople: >
-              
-  
+                charity work, event planning, and to believe and commit to a greater cause
 - position: "Extra-curricular Director"
   id: "extracurricular"
-  description: ""
+  description: >
+                The __Extra-curricular Director__ leads the Extra-curricular Department, which is responsible 
+                for organizing events and social activities. Additionally, they also carry the responsibility 
+                of taking care of the welfare of all clubs and societies, and ensure that the campus is 
+                fun and exciting!
+                
+                
+                __Their key responsibilities include:__
+                
+                
+                - Organizing and planning of events, social activities and orientations
+                
+                - Protecting the welfare, promoting, and championing student's involvement in all student 
+                club and societies
+                
+                - Speaking and socializing with various clubs and societies
+                
+                - Solving problems!
   forpeople: >
-              
+              to organize and plan events, to instill strong spirit and culture within the student body, 
+              to socialize and communicate with others, and solving problems
   
 - position: "International Students Director"
   id: "intlstudents"
-  description: ""
-  forpeople: >
+  description: >
+                The __International Students Director__ leads the International Students Department, which 
+                is responsible for organizing and engaging in social activities relevant to international 
+                students. They are also responsible in protecting and promoting the welfare of the 
+                international students.
+                
+                
+                __Their key responsibilities include:__
+                
+                
+                - Organizing and planning of events and social activities relevant to international students
+                
+                - Promote cross-cultural interaction and diversity
+                
+                - Protecting and promoting the welfare of international students"
+                
+  forpeople: "communicating and socializing with people, organizing & planning events"
               
   
-- position: "Students Welfare Director"
-  id: "studentswelfare"
-  description: ""
+- position: "Student Welfare Director"
+  id: "studentwelfare"
+  description: >
+                The __Student Welfare Director__ leads the Student Welfare Department, which is responsible for 
+                any matter concerning the welfare of students. They are the bridge between the management and 
+                the students. They will need to handle student's feedbacks and collaborate with the management 
+                to act on it.
+                
+                
+                __Their key responsibilities include:__
+                
+                
+                - Protecting the student welfare of all students
+                
+                - Solving (lots of) problems
+                
+                - Speaking and truly understanding the issues faced by students
+                
+                - Launch campaigns, events, and surveys to further a cause and change
+                
   forpeople: >
-              
+              communicating with people, solving problems, to be persuasive, and committing & believing that 
+              the campus environment can always be better

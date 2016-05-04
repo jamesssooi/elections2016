@@ -1,0 +1,35 @@
+---
+layout: page
+title: Candidates
+description: The future student leaders of the Sunway University Student Council.
+---
+
+<section id="candidates" class="container">
+    <div class="row">
+        {% for candidate in site.candidates %}
+        <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-3 col-md-offset-0">
+			<a href="/candidates/{{ candidate.slug }}" class="candidate-item">
+				<img src="assets/candidates/thumbnails/{{ candidate.slug }}.jpg" />
+				<div class="candidate-item-text">
+					<div class="candidate-item-text-inner">
+						<span class="candidate-item-name">{{ candidate.name }}</span>
+						<span class="candidate-item-pos">{{ candidate.position }}</span>
+					</div>
+				</div>
+			</a>
+		</div>
+        {% endfor %}
+    </div>
+</section>
+
+<!-- CTA -->
+<section id="cta" class="color-section-base section-bg-checkmark">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-4 col-sm-offset-4">
+				<h2>Be the change, make the change.<br />Vote.</h2>
+				<span class="help-block">9th – 12th May &middot; University Foyer</span>
+			</div>
+		</div>
+	</div>
+</section>

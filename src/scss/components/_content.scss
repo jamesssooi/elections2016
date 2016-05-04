@@ -9,6 +9,11 @@
     margin-top: 1em;
 }
 
+.content h4 {
+    font-weight: bold;
+    margin-top: 1em;
+}
+
 .content li + li {
     margin-top: 5px;
 }
@@ -20,5 +25,9 @@
 @media screen and (min-width: 768px) {
     .content {
         font-size: 1.2em;
+    }
+    
+    .content h3, .content h4 {
+        margin-top: 1.5em;
     }
 }

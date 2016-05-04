@@ -1,24 +1,35 @@
-<head>
 	<title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
     <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">	
+	
+	<link rel="icon" type="image/png" href="/assets/favicon_32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="/assets/favicon_16x16.png" sizes="16x16" />
 	
 	<!-- load bootstrap via CDN -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">	
 	
 	<!-- load js -->
 	<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-	<script src='js/fastclick.js'></script>
-	<script src="js/scripts.js"></script>
-    <script src="js/smooth-scroll.min.js" type="text/javascript"></script>
+	<script src='/js/fastclick.js'></script>
+	<script src="/js/scripts.js"></script>
+    <script src="/js/smooth-scroll.min.js" type="text/javascript"></script>
 	
 	<!-- load font -->
 	<link href='https://fonts.googleapis.com/css?family=Nunito:400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	
 	<!-- load css -->
-	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="/css/main.css">
 	
-</head>	
+	<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-76288050-1', 'auto');
+	ga('send', 'pageview');
+	</script>
+	

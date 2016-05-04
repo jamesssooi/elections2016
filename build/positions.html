@@ -1,21 +1,28 @@
 ---
 layout: page
 title: Positions
-description: Lorem ipsum dolor sit amet conseqtur dilis adispicing elit.
 ---
 
 <!-- Positions (Mobile) -->
 <section id="positions_xs" class="container visible-xs visible-sm">
     {% for position in site.data.positions %}
+	{% if position.description != "" %}
 	<div class="accordion-item" id="{{ position.id }}-xs">
 		<div class="accordion-toggle">
-			{{ position.position }}
+			{% if position.description_title != nil %}
+				{{ position.description_title }}
+			{% else %}
+				{{ position.position }}
+			{% endif %}
 			<i class="accordion-toggle-icon fa fa-chevron-down"></i>
 		</div>
 		<div class="accordion-content">
 			{{ position.description | markdownify }}
+			
+			<i class="small">For people who like: {{ position.forpeople | markdownify }}</i>
 		</div>
 	</div>
+	{% endif %}
     {% endfor %}
 </section>
 
@@ -24,17 +31,25 @@ description: Lorem ipsum dolor sit amet conseqtur dilis adispicing elit.
 	<div class="container">
         
         {% for position in site.data.positions %}
+		{% if position.description != "" %}
 		<div class="row positions-md-item" id="{{ position.id }}-sm">
 			<div class="col-md-3 positions-md-item-info">
-				<span class="positions-md-item-title">{{ position.position }}</span>
+				<span class="positions-md-item-title">
+					{% if position.description_title != nil %}
+						{{ position.description_title }}
+					{% else %}
+						{{ position.position }}
+					{% endif %}
+				</span>
 				<span class="positions-md-item-interests">Perfect for people who like: {{ position.forpeople | markdownify }}</span>
 			</div>
-			<div class="col-md-9">
+			<div class="col-md-9 positions-md-item-content">
 				{{ position.description | markdownify }}
 			</div>
 		</div>
 		
 		<hr />
+		{% endif %}
         {% endfor %}
         
 	</div>
@@ -45,9 +60,8 @@ description: Lorem ipsum dolor sit amet conseqtur dilis adispicing elit.
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12 col-sm-4 col-sm-offset-4">
-				<h2>Register your candidacy</h2>
-				<a href="#" class="btn btn-primary btn-block">Register</a>
-				<span class="help-block small">Don't worry, we'll guide you through the entire process!</span>
+				<h2>Be the change, make the change.<br />Vote.</h2>
+				<span class="help-block">9th – 12th May &middot; University Foyer</span>
 			</div>
 		</div>
 	</div>

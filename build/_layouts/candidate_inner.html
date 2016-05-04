@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+{% include head.html %}
+
+<meta property="og:image" content="https://elections.sunwaysa.org/assets/candidates/facebook/{{ page.slug }}.jpg" />
+<meta property="og:title" content="{{ page.name }} for {{ page.position }} • Sunway University Student Council" />
+<meta property="og:description" content="Learn more about {{ page.name }}, their plans and their introductory video here!">
+<meta property="og:url" content="https://elections.sunwaysa.org/candidates/{{ page.slug }}">
+
+
+</head>
+
+<body>
+	
+{% include header.html %}
+
+<!-- Candidate Hero -->
+<section id="candidate" class="header">
+	<div class="container hero" style="background-image: url('/assets/candidates/{{ page.slug }}.jpg')">
+		<div class="row">
+			<div class="hero-text col-xs-12 col-sm-5 col-md-5 col-lg-5 hidden-xs hidden-sm">
+				<h1>{{ page.name }}</h1><br />
+				<p>Candidate for <strong>{{ page.position }}</strong></p><br />
+				<a href="#" class="hero-link candidate-video-button" onclick="ga('send', 'event', 'View Video (Text)', 'click', 'Profile Page')">Watch video [{{page.video_length}}] <i class="fa fa-play-circle"></i></a>
+			</div>
+			<div class="play-button-outer candidate-video-button" onclick="ga('send', 'event', 'View Video (Button)', 'click', 'Profile Page')">
+				<i class="fa fa-fw fa-play-circle"></i>
+			</div>
+			<div class="candidate-hero-overlay">
+				&nbsp;
+			</div>
+			<div id="candidate-video" class="candidate-video-outer">
+				<div class="candidate-video">
+					<div class="candidate-video-close candidate-video-button">
+						<i class="fa fa-close"></i> Close
+					</div>
+					<iframe id="ytVIdeo" width="560" height="315" src="https://www.youtube.com/embed/{{ page.youtube }}?list=PLDrD_1eD__E-6vdnk3-5gBhEclVZeBOI6&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Candidate Deets -->
+<section id="candidate-profile">
+	<div class="container">
+		
+		<div class="row">
+			<div class="col-xs-12 candidate-profile-info visible-xs visible-sm">
+				<div class="candidate-profile-info-inner">
+					<h1>{{ page.name }}</h1>
+					<p>Candidate for <strong>{{ page.position }}</strong></p>
+					<a href="#" class="candidate-video-button">Watch video [{{ page.video_length }}] <i class="fa fa-play-circle"></i></a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-md-7 candidate-profile-biography">
+				{{ page.biography | markdownify }}
+			</div>
+			<div class="col-md-4 col-md-push-1 candidate-profile-sidebar">
+				<h3>Show your support</h3>
+				<ul class="list-unstyled candidate-profile-links">
+					<li>
+						<a href="http://www.facebook.com/sharer.php?u=elections.sunwaysa.org/candidates/{{ page.slug }}" target="_blank" onclick="ga('send', 'event', 'Facebook Share', 'click', '{{ page.slug }}')"><i class="fa fa-fw fa-facebook-square"></i> Share on Facebook</a>
+					</li>
+					<!--<li>
+						<a href="#"><i class="fa fa-fw fa-twitter-square"></i> Tweet on Twitter</a>
+					</li>-->
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Experiences -->
+{% if page.experiences != nil %}
+<section id="candidate-details" class="color-section-alternate">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 section-title">
+				<img src="/assets/lightbulb.svg" class="section-title-image hidden-md hidden-lg" alt="">
+				<h2>Experiences</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3">
+				<img src="/assets/lightbulb.svg" class="section-title-image visible-md visible-lg" alt="">
+			</div>
+			<div class="col-md-9 candidate-experiences">
+				<ul class="list-unstyled experiences-list">
+					{% for experience in page.experiences %}
+					<li class="experiences-item">
+						<span class="experiences-item-title">{{ experience.title }}</span>{% if experience.subtitle != nil %}, {{ experience.subtitle }}{% endif %}
+						<span class="experiences-item-year">{{ experience.year }}</span>
+					</li>
+					{% endfor %}
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+{% endif %}
+
+<!-- Manifesto -->
+{% if page.manifestos != nil %}
+<section id="candidate-details" class="color-section-alternate">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 section-title">
+				<img src="/assets/manifesto.svg" class="section-title-image hidden-md hidden-lg" alt="">
+				<h2>Manifesto</h2>
+				<p>A public declaration of the policies, aims, and plans that I intend to execute if I am elected office.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3">
+				<img src="/assets/manifesto.svg" class="section-title-image visible-md visible-lg" alt="">
+			</div>
+			<div class="col-md-9 candidate-manifesto">
+				{% for manifesto in page.manifestos %}
+				<div class="manifesto-item">
+					<span class="manifesto-item-title">{{ manifesto.title }}</span>
+					<span class="manifesto-item-content">{{ manifesto.content }}</span>
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</section>
+{% endif %}
+
+<!-- Other Candidates -->
+<section id="candidates">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<h2>Other Candidates</h2>
+			</div>
+		</div>
+		<div class="row">
+			{% for candidate in page.others %}
+			<div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-0 col-md-3 col-md-offset-0">
+				<a href="/candidates/{{ site.candidates[candidate].slug }}" class="candidate-item">
+					<img src="/assets/candidates/thumbnails/{{ site.candidates[candidate].slug }}.jpg" />
+					<div class="candidate-item-text">
+						<div class="candidate-item-text-inner">
+							<span class="candidate-item-name">{{ site.candidates[candidate].name }}</span>
+							<span class="candidate-item-pos">{{ site.candidates[candidate].position }}</span>
+						</div>
+					</div>
+				</a>
+			</div>
+			{% endfor %}
+		</div>
+		<div class="row">
+			<div class="col-xs-12 candidate-seeall">
+				<a href="/candidate">See all candidates <i class="fa fa-arrow-circle-right"></i></a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- CTA -->
+<section id="cta" class="color-section-base section-bg-checkmark">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-4 col-sm-offset-4">
+				<h2>Be the change, make the change.<br />Vote.</h2>
+				<span class="help-block">9th – 12th May &middot; University Foyer</span>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Footer -->
+{% include footer.html %}
+
+</body>
+</html>

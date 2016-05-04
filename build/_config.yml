@@ -8,11 +8,26 @@
 # Site settings
 title: "Elections 2016 • Sunway University Student Council"
 email: sa.info@imail.sunway.edu.my
-description: "Be a part of the change you wish to see. Join the next generation of the Sunway University Student Council and lead it to greater heights."
+description: >
+              Be a student leader. Join the next generation of the Sunway University 
+              Student Council and shape a better, brighter future for the student community. 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://elections.sunwaysa.org" # the base hostname & protocol for your site
 twitter_username: SunwayUSC
-github_username:  jekyll
+github_username:  jamesssooi
+collections:
+    candidates:
+        output: true
+        permalink: /candidates/:path
+        values:
+            layout: candidate_inner
+
+defaults:
+    - scope:
+        path: ""
+        type: candidates
+      values:
+        layout: candidate_inner
 
 # Build settings
 markdown: kramdown

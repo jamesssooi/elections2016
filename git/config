@@ -1,0 +1,10 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+	ignorecase = true
+	precomposeunicode = true
+[remote "production"]
+	url = ssh://sunwaysa@sunwaysa.org:995/home/sunwaysa/git/elections2016.git
+	fetch = +refs/heads/*:refs/remotes/production/*

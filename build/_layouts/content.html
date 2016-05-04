@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 
+<head>
 {% include head.html %}
+</head>
 
 <body>
 
@@ -14,7 +16,7 @@
 				<h1>{{ page.title }}</h1>
 				<p>{{ page.description }}</p>
                 {% if page.cta %}
-				    <a href="{{ page.ctaLink }}" class="btn btn-primary btn-block">{{ page.cta }}</a>
+				    <a href="{{ page.cta_link }}" class="btn btn-primary btn-block" onclick="ga('send', 'event', '{{ page.cta_event }}', 'click', '{{ page.cta_event_label }}')">{{ page.cta }}</a>
                 {% endif %}
 			</div>
 		</div>
